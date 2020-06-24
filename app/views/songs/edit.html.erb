@@ -2,7 +2,7 @@
 <%= form_for @song do |f|%>
   <% if @song.errors.any? %>
      <ul>
-       <% @song.errors.full_messages do |message|%>
+       <% @song.errors.full_messages.each do |message|%>
         <li><%= message %></li>
        <% end %>
      </ul>
