@@ -1,12 +1,12 @@
 <h1>New Song Form</h1>
 <%= form_for @song do |f|%>
-  <!-- <% if @song.errors.any? %>
+  <% if @song.errors.any? %>
      <ul>
        <% @song.errors.full_messages.each do |message|%>
         <li><%= message %></li>
        <% end %>
      </ul>
-  <% end %> -->
+  <% end %>
   <p>Title: <%= f.text_field :title %></p>
   <p>Released: <%= f.text_field :released %></p>
   <p>Release Year: <%= f.number_field :release_year %></p>
