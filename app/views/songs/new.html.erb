@@ -8,11 +8,11 @@
      </ul>
   <% end %>
   
-  <p>Title: <%= f.text.field :title %></p>
-  <p>Released: <%= f.text.field :released %></p>
-  <p>Release Year: <%= f.text.field :release_year %></p>
-  <p>Genre: <%= f.text.field :genre %></p>
-  <p>Artist Name: <%= f.text.field :artist_name %></p>
+  <p>Title: <%= f.text_field :title %></p>
+  <p>Released: <%= f.text_field :released %></p>
+  <p>Release Year: <%= f.text_field :release_year %></p>
+  <p>Genre: <%= f.text_field :genre %></p>
+  <p>Artist Name: <%= f.text_field :artist_name %></p>
 
   <%= f.submit :'Create Song'%>
 <% end %>
